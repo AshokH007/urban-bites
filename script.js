@@ -1,6 +1,14 @@
 /* urban bites premium script */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Preloader Logic
+    const preloader = document.querySelector('.preloader');
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+        }, 500);
+    });
+
     // 1. Sticky Header Logic
     const header = document.querySelector('.header');
     const backToTop = document.querySelector('.back-to-top');
