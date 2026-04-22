@@ -1,470 +1,55 @@
+<!-- MULTIPAGE_VERSION_FINAL -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Bites | Premium Gourmet Dining NY</title>
-    <meta name="description" content="Experience the pinnacle of urban gourmet dining at Urban Bites. Modern flavors, luxury atmosphere, and 5-star service in the heart of New York. Book your table now.">
-    <meta name="keywords" content="restaurant, fine dining, gourmet, NYC, Urban Bites, reservations, luxury dining">
-    <meta property="og:title" content="Urban Bites | Urban Gourmet Dining">
-    <meta property="og:description" content="Exquisite flavors and luxury vibes. Serving over 1,000+ happy customers every month.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-content">
-            <div class="preloader-logo">URBAN BITES</div>
-            <div class="preloader-bar"></div>
+    <button class="sidebar-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="sidebar-overlay"></div>
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo">URBAN BITES</span>
         </div>
-    </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item"><a href="index.html" class="sidebar-link active"><i class="fas fa-home"></i> Home</a></li>
+            <li class="sidebar-item"><a href="pages/menu.html" class="sidebar-link"><i class="fas fa-utensils"></i> Menu</a></li>
+            <li class="sidebar-item"><a href="pages/services.html" class="sidebar-link"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li class="sidebar-item"><a href="pages/contact.html" class="sidebar-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            <li class="sidebar-item"><a href="pages/timings.html" class="sidebar-link"><i class="fas fa-clock"></i> Timings</a></li>
+        </ul>
+    </nav>
 
-    <!-- Header Navbar -->
     <header class="header">
-        <div class="container nav">
-            <a href="#" class="logo">URBAN BITES</a>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">Our Story</a></li>
-                <li><a href="#menu" class="nav-link">Menu</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <a href="#contact" class="btn btn-outline" style="padding: 0.6rem 1.8rem; font-size: 0.8rem;">Book Table</a>
+        <div class="container nav" style="justify-content: flex-end;">
+            <a href="pages/contact.html" class="btn btn-outline">Book Table</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content reveal">
                     <span class="text-gold" style="letter-spacing: 5px; font-weight: 600; text-transform: uppercase;">Est. 2012</span>
                     <h1>Culinary Excellence <br> Reimagined</h1>
-                    <p>Experience a sophisticated fusion of global techniques and local soul, served in a refined urban atmosphere designed to inspire.</p>
+                    <p>Experience a sophisticated fusion of global techniques and local soul.</p>
                     <div class="hero-btns">
-                        <a href="#menu" class="btn btn-primary">Order Now <i class="fas fa-shopping-cart"></i></a>
-                        <a href="#contact" class="btn btn-outline">Book a Table <i class="fas fa-calendar-check"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section reveal">
-            <div class="container">
-                <div class="contact-container" style="align-items: center;">
-                    <div class="about-img-box" style="position: relative;">
-                        <img src="https://images.unsplash.com/photo-1550966842-2849a2202021?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Executive Chef" style="border-radius: var(--border-radius); box-shadow: 20px 20px 0 var(--primary);">
-                    </div>
-                    <div class="about-content">
-                        <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-                            <span>Sophistication in every bite</span>
-                            <h2>The Urban Bites Experience</h2>
-                        </div>
-                        <p style="margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--text-gray);">Urban Bites isn't just a restaurant; it's a destination. Our culinary team, led by world-class chefs, focuses on the delicate balance of flavor, texture, and visual artistry.</p>
-                        <p style="margin-bottom: 2rem; color: var(--text-muted);">From the ambient lighting to the handcrafted spirits at our bar, every detail is engineered to provide a transcendent dining experience that lingers in your memory long after the night ends.</p>
-                        <a href="#gallery" class="btn btn-primary">Explore Our Space</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Menu Section (Categorized) -->
-        <section id="menu" class="section" style="background-color: var(--bg-dark);">
-            <div class="container">
-                <div class="section-header">
-                    <span>Taste the Innovation</span>
-                    <h2>Signature Selections</h2>
-                </div>
-                
-                <!-- Starters -->
-                <h3 class="menu-category-title reveal" style="margin-bottom: 2rem; color: var(--primary); font-size: 1.8rem; text-align: center;">Starters</h3>
-                <div class="menu-grid" style="margin-bottom: 5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                    <!-- Item 1 -->
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Truffle Risotto">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Black Truffle Risotto</h3>
-                                <span class="menu-price">$32</span>
-                            </div>
-                            <p class="menu-desc">Arborio rice, wild mushrooms, aged parmesan, and shaved black truffle.</p>
-                        </div>
-                    </article>
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1541014741259-df549fa9ba6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Scallops">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Hokkaido Scallops</h3>
-                                <span class="menu-price">$24</span>
-                            </div>
-                            <p class="menu-desc">Pan-seared scallops with cauliflower silk and chorizo crumble.</p>
-                        </div>
-                    </article>
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Caesar">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Modern Caesar</h3>
-                                <span class="menu-price">$18</span>
-                            </div>
-                            <p class="menu-desc">Deconstructed romaine, 24-month parmigiano, and brioche dust.</p>
-                        </div>
-                    </article>
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1546793665-c74683c3f43d?auto=format&fit=crop&w=800&q=80" alt="Shrimp">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Cured Prawns</h3>
-                                <span class="menu-price">$21</span>
-                            </div>
-                            <p class="menu-desc">Gin-cured king prawns with cucumber textures and yuzu pearls.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Main Course -->
-                <h3 class="menu-category-title reveal" style="margin-bottom: 2rem; color: var(--primary); font-size: 1.8rem; text-align: center;">Main Course</h3>
-                <div class="menu-grid" style="margin-bottom: 5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                    <!-- Item 2 -->
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sea Bass">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Chilean Sea Bass</h3>
-                                <span class="menu-price">$45</span>
-                            </div>
-                            <p class="menu-desc">Wild-caught bass, lemon-caper beurre blanc, grilled asparagus.</p>
-                        </div>
-                    </article>
-                    <!-- Item 3 -->
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Wagyu Burger">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Wagyu Reserve</h3>
-                                <span class="menu-price">$28</span>
-                            </div>
-                            <p class="menu-desc">A5 Wagyu beef, balsamic onions, and truffle aioli on brioche.</p>
-                        </div>
-                    </article>
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Steak">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Dry-Aged Ribeye</h3>
-                                <span class="menu-price">$58</span>
-                            </div>
-                            <p class="menu-desc">45-day dry-aged beef, marrow butter, and roasted root vegetables.</p>
-                        </div>
-                    </article>
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Lamb">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Herb-Crusted Lamb</h3>
-                                <span class="menu-price">$42</span>
-                            </div>
-                            <p class="menu-desc">Provencal herb rack, pomegranate reduction, mint pea purée.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Desserts -->
-                <h3 class="menu-category-title reveal" style="margin-bottom: 2rem; color: var(--primary); font-size: 1.8rem; text-align: center;">Desserts</h3>
-                <div class="menu-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                    <!-- Item 6 -->
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dessert">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Velvet Gold</h3>
-                                <span class="menu-price">$18</span>
-                            </div>
-                            <p class="menu-desc">Dark chocolate, 24k gold leaf, and bourbon vanilla ice cream.</p>
-                        </div>
-                    </article>
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Souffle">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Vanilla Soufflé</h3>
-                                <span class="menu-price">$22</span>
-                            </div>
-                            <p class="menu-desc">Twice-baked Tahitian vanilla soufflé with Grand Marnier crème.</p>
-                        </div>
-                    </article>
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1551024631-ff93e03d2dfa?auto=format&fit=crop&w=800&q=80" alt="Cheesecake">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Berry Infusion</h3>
-                                <span class="menu-price">$16</span>
-                            </div>
-                            <p class="menu-desc">Manuka honey cheesecake with wild berry reduction.</p>
-                        </div>
-                    </article>
-                    <article class="menu-card reveal">
-                        <div class="menu-thumb">
-                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80" alt="Macarons">
-                        </div>
-                        <div class="menu-info">
-                            <div class="menu-title-row">
-                                <h3>Signature Paris</h3>
-                                <span class="menu-price">$14</span>
-                            </div>
-                            <p class="menu-desc">A flight of 5 artisanal macarons with exotic fillings.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="section reveal" style="background-color: var(--bg-black);">
-            <div class="container">
-                <div class="section-header">
-                    <span>Social Proof</span>
-                    <h2>Guest Experiences</h2>
-                </div>
-                <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                    <div class="testimonial-card" style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: var(--border-gold); position: relative;">
-                        <div class="stars" style="color: var(--primary); margin-bottom: 0.5rem; font-size: 0.9rem;">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p style="font-style: italic; color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">"Atmosphere is unmatched in NYC. Truly a 5-star gem!"</p>
-                        <div class="user-info" style="display: flex; align-items: center; gap: 0.8rem;">
-                            <div style="width: 40px; height: 40px; border-radius: 50%; background: #333; overflow: hidden;"><img src="https://i.pravatar.cc/100?u=1" alt="User"></div>
-                            <div>
-                                <h4 style="font-size: 1rem;">Alexander Pierce</h4>
-                                <span style="font-size: 0.75rem; color: var(--text-muted);">Food Critic</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card" style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: var(--border-gold); position: relative;">
-                        <div class="stars" style="color: var(--primary); margin-bottom: 0.5rem; font-size: 0.9rem;">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p style="font-style: italic; color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">"The staff treated us like royalty. Sea Bass was divine."</p>
-                        <div class="user-info" style="display: flex; align-items: center; gap: 0.8rem;">
-                            <div style="width: 40px; height: 40px; border-radius: 50%; background: #333; overflow: hidden;"><img src="https://i.pravatar.cc/100?u=2" alt="User"></div>
-                            <div>
-                                <h4 style="font-size: 1rem;">Sarah Jenkins</h4>
-                                <span style="font-size: 0.75rem; color: var(--text-muted);">Loyal Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card" style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: var(--border-gold); position: relative;">
-                        <div class="stars" style="color: var(--primary); margin-bottom: 0.5rem; font-size: 0.9rem;">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p style="font-style: italic; color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">"Urban Bites consistently delivers on flavor and vibes."</p>
-                        <div class="user-info" style="display: flex; align-items: center; gap: 0.8rem;">
-                            <div style="width: 40px; height: 40px; border-radius: 50%; background: #333; overflow: hidden;"><img src="https://i.pravatar.cc/100?u=3" alt="User"></div>
-                            <div>
-                                <h4 style="font-size: 1rem;">David Chen</h4>
-                                <span style="font-size: 0.75rem; color: var(--text-muted);">Top Reviewer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card" style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: var(--border-gold); position: relative;">
-                        <div class="stars" style="color: var(--primary); margin-bottom: 0.5rem; font-size: 0.9rem;">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p style="font-style: italic; color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">"Breathtaking views and even better food. Highy recommended."</p>
-                        <div class="user-info" style="display: flex; align-items: center; gap: 0.8rem;">
-                            <div style="width: 40px; height: 40px; border-radius: 50%; background: #333; overflow: hidden;"><img src="https://i.pravatar.cc/100?u=4" alt="User"></div>
-                            <div>
-                                <h4 style="font-size: 1rem;">Emily Watson</h4>
-                                <span style="font-size: 0.75rem; color: var(--text-muted);">Influencer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card" style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: var(--border-gold); position: relative;">
-                        <div class="stars" style="color: var(--primary); margin-bottom: 0.5rem; font-size: 0.9rem;">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p style="font-style: italic; color: var(--text-gray); margin-bottom: 1.5rem; font-size: 0.95rem;">"The cocktail bar alone is worth the trip. Unique and tasty!"</p>
-                        <div class="user-info" style="display: flex; align-items: center; gap: 0.8rem;">
-                            <div style="width: 40px; height: 40px; border-radius: 50%; background: #333; overflow: hidden;"><img src="https://i.pravatar.cc/100?u=5" alt="User"></div>
-                            <div>
-                                <h4 style="font-size: 1rem;">Michael Ross</h4>
-                                <span style="font-size: 0.75rem; color: var(--text-muted);">Mixologist</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="section reveal">
-            <div class="container">
-                <div class="section-header">
-                    <span>How We Deliver</span>
-                    <h2>Exclusive Services</h2>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card reveal">
-                        <i class="fas fa-utensils"></i>
-                        <h3>Luxury Dine-In</h3>
-                        <p>Enjoy impeccable service and a curated soundtrack in our architecturally stunning main dining hall.</p>
-                    </div>
-                    <div class="service-card reveal">
-                        <i class="fas fa-wine-glass-alt"></i>
-                        <h3>Cocktail Bar</h3>
-                        <p>Experience artisanal mixology at our signature bar, featuring rare spirits and custom recipes.</p>
-                    </div>
-                    <div class="service-card reveal">
-                        <i class="fas fa-concierge-bell"></i>
-                        <h3>Gourmet Delivery</h3>
-                        <p>The Urban Bites experience, meticulously packaged and delivered to your doorstep with zero compromise.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Section -->
-        <section id="gallery" class="reveal">
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gallery 1"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gallery 2"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gallery 3"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gallery 4"></div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section reveal">
-            <div class="container">
-                <div class="section-header">
-                    <span>Get in Touch</span>
-                    <h2>Book Your Moments</h2>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-form">
-                        <form id="reservation-form">
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" placeholder="John Doe" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" placeholder="john@example.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message / Special Requests</label>
-                                <textarea id="message" rows="5" placeholder="Tell us about your occasion..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100" style="width: 100%;">Send Request</button>
-                        </form>
-                    </div>
-                    <div class="contact-info-list" style="display: flex; flex-direction: column; gap: 2rem;">
-                        <div class="info-item-box" style="background: var(--bg-card); padding: 2rem; border-radius: 8px; border: var(--border-gold);">
-                            <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="fas fa-map-marker-alt"></i> Location</h4>
-                            <p>123 Luxury Ave, Midtown Manhattan, NY 10001</p>
-                            <p style="margin-top: 0.5rem; font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.5rem;">The heart of culinary innovation.</p>
-                        </div>
-                        <div class="info-item-box" style="background: var(--bg-card); padding: 2rem; border-radius: 8px; border: var(--border-gold);">
-                            <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="fas fa-phone-alt"></i> Call Now</h4>
-                            <p><a href="tel:+919876543210" class="text-white">+91 98765 43210</a></p>
-                            <p style="margin-top: 0.5rem;"><a href="mailto:contact@urbanbites.com" class="text-white">contact@urbanbites.com</a></p>
-                        </div>
-                        <div class="map-box" style="border-radius: 8px; overflow: hidden; height: 300px; border: var(--border-gold);">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1682165000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; filter: grayscale(1) invert(0.9);" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                        <a href="pages/menu.html" class="btn btn-primary">Order Now</a>
+                        <a href="pages/contact.html" class="btn btn-outline">Book Table</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="logo footer-logo">URBAN BITES</a>
-                    <p class="footer-desc">Urban Bites defines the future of urban dining. Serving over 1,000+ happy customers every month.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="footer-nav">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#about">Our Story</a></li>
-                        <li><a href="#menu">Signature Menu</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#contact">Reservations</a></li>
-                    </ul>
-                </div>
-                <div class="footer-hours">
-                    <h4>Opening Hours</h4>
-                    <ul class="footer-links" style="color: var(--text-gray);">
-                        <li>Mo - Th: 11:00 am - 11:00 pm</li>
-                        <li>Fr - Sa: 11:00 am - 12:00 am</li>
-                        <li>Su: 10:00 am - 11:00 pm</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center" style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">
-                <p>&copy; 2026 Urban Bites Restaurant. All rights reserved. Crafted for Professional Excellence.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating Utility Buttons -->
-    <a href="https://wa.me/919876543210" class="float-whatsapp" target="_blank" style="bottom: 2rem; left: 2rem;">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="tel:+919876543210" class="float-btn-call" style="position: fixed; bottom: 8rem; left: 2.2rem; background: var(--primary); color: var(--bg-black); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: var(--transition-smooth);">
-        <i class="fas fa-phone"></i>
-    </a>
-    <a href="#" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-
-    <!-- Mobile Sticky Action Bar -->
-    <div class="mobile-action-bar">
-        <a href="tel:+1234567890" class="action-btn call">
-            <i class="fas fa-phone"></i> Call Now
-        </a>
-        <a href="https://wa.me/1234567890" class="action-btn whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Urban Bites Premium</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="padding-bottom: 0;">
+    <!-- Sidebar Component -->
+    <button class="sidebar-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="sidebar-overlay"></div>
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo">URBAN BITES</span>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item"><a href="../index.html" class="sidebar-link"><i class="fas fa-home"></i> Home</a></li>
+            <li class="sidebar-item"><a href="menu.html" class="sidebar-link active"><i class="fas fa-utensils"></i> Menu</a></li>
+            <li class="sidebar-item"><a href="services.html" class="sidebar-link"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li class="sidebar-item"><a href="contact.html" class="sidebar-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            <li class="sidebar-item"><a href="timings.html" class="sidebar-link"><i class="fas fa-clock"></i> Timings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Menu Section -->
+        <section class="section" style="background-color: var(--bg-dark); min-height: 100vh; padding-top: 8rem;">
+            <div class="container">
+                <div class="section-header">
+                    <span>Taste the Innovation</span>
+                    <h2>Signature Menu</h2>
+                </div>
+                
+                <!-- Starters -->
+                <h3 class="menu-category-title reveal" style="margin-bottom: 2rem; color: var(--primary); font-size: 1.8rem; text-align: center;">Starters</h3>
+                <div class="menu-grid" style="margin-bottom: 5rem;">
+                    <article class="menu-card reveal">
+                        <div class="menu-thumb"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800" alt="Item"></div>
+                        <div class="menu-info">
+                            <div class="menu-title-row"><h3>Black Truffle Risotto</h3><span class="menu-price">$32</span></div>
+                            <p class="menu-desc">Arborio rice, wild mushrooms, aged parmesan, and shaved black truffle.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card reveal">
+                        <div class="menu-thumb"><img src="https://images.unsplash.com/photo-1541014741259-df549fa9ba6f?auto=format&fit=crop&w=800" alt="Item"></div>
+                        <div class="menu-info">
+                            <div class="menu-title-row"><h3>Hokkaido Scallops</h3><span class="menu-price">$24</span></div>
+                            <p class="menu-desc">Pan-seared scallops with cauliflower silk and chorizo crumble.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Main Course -->
+                <h3 class="menu-category-title reveal" style="margin-bottom: 2rem; color: var(--primary); font-size: 1.8rem; text-align: center;">Main Course</h3>
+                <div class="menu-grid" style="margin-bottom: 5rem;">
+                    <article class="menu-card reveal">
+                        <div class="menu-thumb"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800" alt="Item"></div>
+                        <div class="menu-info">
+                            <div class="menu-title-row"><h3>Chilean Sea Bass</h3><span class="menu-price">$45</span></div>
+                            <p class="menu-desc">Wild-caught bass, lemon-caper beurre blanc, grilled asparagus.</p>
+                        </div>
+                    </article>
+                    <article class="menu-card reveal">
+                        <div class="menu-thumb"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800" alt="Item"></div>
+                        <div class="menu-info">
+                            <div class="menu-title-row"><h3>Wagyu Reserve</h3><span class="menu-price">$28</span></div>
+                            <p class="menu-desc">A5 Wagyu beef, balsamic onions, and truffle aioli on brioche.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>
+</html>

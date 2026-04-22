@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Hours | Urban Bites</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <button class="sidebar-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="sidebar-overlay"></div>
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo">URBAN BITES</span>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item"><a href="../index.html" class="sidebar-link"><i class="fas fa-home"></i> Home</a></li>
+            <li class="sidebar-item"><a href="menu.html" class="sidebar-link"><i class="fas fa-utensils"></i> Menu</a></li>
+            <li class="sidebar-item"><a href="services.html" class="sidebar-link"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li class="sidebar-item"><a href="contact.html" class="sidebar-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            <li class="sidebar-item"><a href="timings.html" class="sidebar-link active"><i class="fas fa-clock"></i> Timings</a></li>
+        </ul>
+    </nav>
+
+    <main class="section" style="padding-top: 10rem; min-height: 100vh;">
+        <div class="container" style="max-width: 600px;">
+            <div class="section-header">
+                <span>Plan Your Visit</span>
+                <h2>Opening Hours</h2>
+            </div>
+            <div class="info-item-box" style="background: var(--bg-card); padding: 3rem; border-radius: 12px; border: var(--border-gold); text-align: center;">
+                <div class="status-badge" style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(37, 211, 102, 0.2); color: #25D366; border-radius: 50px; margin-bottom: 2rem; font-weight: 700; border: 1px solid #25D366;">
+                    ● OPEN NOW
+                </div>
+                <ul style="list-style: none; color: var(--text-gray); font-size: 1.1rem; line-height: 2.5;">
+                    <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1);"><span>Monday - Thursday</span> <span class="text-white">11:00 AM - 11:00 PM</span></li>
+                    <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1);"><span>Friday - Saturday</span> <span class="text-white">11:00 AM - 12:00 AM</span></li>
+                    <li style="display: flex; justify-content: space-between;"><span>Sunday</span> <span class="text-white">10:00 AM - 11:00 PM</span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>
+</html>

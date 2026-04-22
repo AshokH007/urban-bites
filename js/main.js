@@ -28,16 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Smooth Scroll for Nav Links
-    const navLinksList = document.querySelectorAll('.nav-link, .btn');
+    // 3. Navigation Link Handling
+    const navLinksList = document.querySelectorAll('.nav-link, .btn, .sidebar-link');
     navLinksList.forEach(link => {
         link.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            if (targetId && targetId.startsWith('#') && targetId.length > 1) {
-                e.preventDefault();
-                const targetElement = document.querySelector(targetId);
+            const href = this.getAttribute('href');
+            
+            // Only prevent default if it's an internal hash on the CURRENT page
+            if (href && href.startsWith('#') && href.length > 1) {
+                const targetElement = document.querySelector(href);
                 if (targetElement) {
-                    const headerHeight = header.offsetHeight;
+                    e.preventDefault();
+                    const headerHeight = header ? header.offsetHeight : 0;
                     const offsetPosition = targetElement.offsetTop - headerHeight;
 
                     window.scrollTo({
