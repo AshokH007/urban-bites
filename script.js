@@ -107,4 +107,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+
+    // 7. Mobile Action Bar Visibility
+    const mobileBar = document.querySelector('.mobile-action-bar');
+    if (mobileBar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                mobileBar.classList.add('visible');
+            } else {
+                mobileBar.classList.remove('visible');
+            }
+        });
+    }
 });
