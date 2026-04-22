@@ -43,3 +43,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Show/Hide Floating Button
+window.addEventListener('scroll', function() {
+    const floatBtn = document.querySelector('.floating-btn');
+    if (window.scrollY > 300) {
+        floatBtn.classList.add('visible');
+    } else {
+        floatBtn.classList.remove('visible');
+    }
+});

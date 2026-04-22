@@ -483,8 +483,52 @@ img {
     }
 }
 
+}
+
+/* Floating Button */
+.floating-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
+    padding: 1rem 1.7rem;
+    border-radius: 50px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.floating-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.floating-btn:hover {
+    background-color: var(--text-main);
+    color: var(--bg-dark);
+    transform: translateY(-5px);
+}
+
 @media (max-width: 576px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
+    .floating-btn span {
+        display: none;
+    }
+    .floating-btn {
+        padding: 1rem;
+        border-radius: 50%;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
 }
